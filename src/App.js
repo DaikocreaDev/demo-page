@@ -17,8 +17,11 @@ class App extends React.Component {
             <Header />
             <Route exact path="/demo-page" component={Home} />
             <Route exact path="/" component={Home} />
+            <Route path="/demo-page/About" component={About} />
             <Route path="/About" component={About} />
+            <Route path="/demo-page/Hit" component={Hit} />
             <Route path="/Hit" component={Hit} />
+            <Route path="/demo-page/NotHit" component={NotHit} />
             <Route path="/NotHit" component={NotHit} />
             <Footer />
           </div>
