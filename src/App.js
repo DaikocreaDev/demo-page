@@ -25,8 +25,8 @@ class App extends React.Component {
                 <Route path="/demo-page/NotHit" component={NotHit} />
                 <Route path="/NotHit" component={NotHit} />
                 <Route exact path="/" component={Home} />
-                <Route path="/:serial" component={Home} />
                 <Route path="/demo-page/:serial" component={Home} />
+                <Route path="/:serial" component={Home} />
               </Switch>
               <Footer />
             </div>
