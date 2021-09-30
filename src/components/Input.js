@@ -10,7 +10,7 @@ class Input extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      serialNum: null,
+      serialNum: this.props.serial,
     };
     this.handleChange = this.handleChange.bind(this);
     this.onClick = this.onClick.bind(this);
