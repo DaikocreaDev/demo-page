@@ -25,11 +25,10 @@ class Input extends React.Component {
   }
 
   onClick() {
-    if (this.state.serialNum === "12345") {
-      this.props.history.push("./Hit");
-    } else {
-      this.props.history.push("./NotHit");
-    }
+    this.props.history.push({
+      pathname: "./Lottery",
+      state: { inputSerialNum: this.state.serialNum },
+    });
   }
 
   render() {

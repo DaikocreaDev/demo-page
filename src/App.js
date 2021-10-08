@@ -6,6 +6,8 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Hit from "./components/Hit";
 import NotHit from "./components/NotHit";
+import Lottery from "./components/Lottery";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/snippets/utils/ScrollToTop";
@@ -24,6 +26,9 @@ class App extends React.Component {
                 <Route path="/Hit" component={Hit} />
                 <Route path="/demo-page/NotHit" component={NotHit} />
                 <Route path="/NotHit" component={NotHit} />
+                <Route path="/demo-page/Lottery" component={Lottery} />
+                <Route path="/Lottery" component={Lottery} />
+
                 <Route exact path="/" component={Home} />
                 <Route path="/demo-page" component={Home} />
                 <Route path="/demo-page/:serial" component={Home} />

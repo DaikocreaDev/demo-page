@@ -7,11 +7,11 @@ class Footer extends React.Component {
   render() {
     return (
       <Row className="bg-info">
-        <Col />
+        <Col className="bg-dark" />
         <Col xs={10} className="bg-dark text-white text-center pt-1 pb-1">
           Daiko.Printing.co.ltd,
         </Col>
-        <Col />
+        <Col className="bg-dark" />
       </Row>
     );
   }

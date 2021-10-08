@@ -1,11 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
+import { useParams } from "react-router";
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+
 import TopVisual from "../components/TopVisual";
 import Caution from "../components/Caution";
 import Input from "../components/Input";
-import { useParams } from "react-router";
+
 function Home() {
   const { serial } = useParams();
   return (
