@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -17,6 +17,7 @@ function Home() {
       <Row className="bg-info">
         <Col />
         <Col xs={10} className="bg-dark pt-2 pb-2">
+          {serial}
           <div className="h4 text-light">【応募締め切り】</div>
           <div className="h3 text-light text-center">
             2021年12月31日 16:59まで

@@ -29,10 +29,12 @@ class App extends React.Component {
                 <Route path="/demo-page/Lottery" component={Lottery} />
                 <Route path="/Lottery" component={Lottery} />
 
-                <Route exact path="/" component={Home} />
+                <Route path="/demo-page/Home/:serial?" component={Home} />
+                <Route path="/demo-page/Home" component={Home} />
+                <Route path="/demo-page/:serial?" component={Home} />
                 <Route path="/demo-page" component={Home} />
-                <Route path="/demo-page/:serial" component={Home} />
-                <Route path="/:serial" component={Home} />
+                <Route exact path="/" component={Home} />
+                <Route path="/:serial?" component={Home} />
               </Switch>
               <Footer />
             </div>
