@@ -11,7 +11,7 @@ import LotteryGif from "../image/lottery.gif";
 class Lottery extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      if (this.props.location.state.inputSerialNum === "12345") {
+      if (this.props.location.state.inputSerialNum === "AT1UeWZaxfbG") {
         this.props.history.push("./Hit");
       } else {
         this.props.history.push("./NotHit");
