@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import About from "./components/About";
@@ -15,31 +15,28 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <ScrollToTop>
             <div>
               <Header />
               <Switch>
-                <Route path="/demo-page/About" component={About} />
+                <Route exact path="/" component={Home} />
+
                 <Route path="/About" component={About} />
-                <Route path="/demo-page/Hit" component={Hit} />
-                <Route path="/Hit" component={Hit} />
-                <Route path="/demo-page/NotHit" component={NotHit} />
-                <Route path="/NotHit" component={NotHit} />
-                <Route path="/demo-page/Lottery" component={Lottery} />
                 <Route path="/Lottery" component={Lottery} />
+                <Route path="/Hit" component={Hit} />
+                <Route path="/NotHit" component={NotHit} />
 
                 <Route path="/demo-page/Home/:serial?" component={Home} />
                 <Route path="/demo-page/Home" component={Home} />
                 <Route path="/demo-page/:serial?" component={Home} />
                 <Route path="/demo-page" component={Home} />
-                <Route exact path="/" component={Home} />
                 <Route path="/:serial?" component={Home} />
               </Switch>
               <Footer />
             </div>
           </ScrollToTop>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
