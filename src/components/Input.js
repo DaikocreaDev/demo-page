@@ -25,10 +25,24 @@ class Input extends React.Component {
   }
 
   onClick() {
-    this.props.history.push({
-      pathname: "./Lottery",
-      state: { inputSerialNum: this.state.serialNum },
-    });
+    switch (this.state.serialNum) {
+      case "57332209":
+        this.props.history.push({
+          pathname: "./Lottery",
+          state: { inputSerialNum: this.state.serialNum },
+        });
+        break;
+      case "63723033":
+        this.props.history.push({
+          pathname: "./Lottery",
+          state: { inputSerialNum: this.state.serialNum },
+        });
+        break;
+      case "61958014":
+        return alert("使用済みのシリアルナンバーです。");
+      default:
+        return alert("シリアルナンバーが異なります。");
+    }
   }
 
   render() {
